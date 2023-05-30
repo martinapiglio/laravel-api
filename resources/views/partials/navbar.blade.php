@@ -15,7 +15,7 @@ function routeName($string){
     
         </a>
     
-        <span class="fs-4">Portfolio</span>
+        <span class="fs-4">My portfolio</span>
 
     </div>
 

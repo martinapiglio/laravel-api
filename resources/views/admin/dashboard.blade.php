@@ -8,11 +8,15 @@
             Welcome to your projects portfolio, {{ Auth::user()->name }}!
         </h1>
 
-        <p>Here you can choose what to do next:</p>
+        <h2>This is your administration page.</h2>
+
+        <h4 class="mb-5">Here you can choose what to do next.</h4>
 
         <div class="content">
 
-            <div class="mb-2">
+            <h5 class="my-3">Projects:</h5>
+
+            <div>
                 <button class="btn btn-dark">
                     <a href="{{route('admin.projects.index')}}">Show all projects</a>
                 </button>
@@ -21,6 +25,20 @@
                     <a href="{{route('admin.projects.create')}}">Add a new project</a>
                 </button>
             </div>
+
+            <h5 class="my-3">Project types:</h5>
+
+            <div>
+                <button class="btn btn-dark">
+                    <a href="{{route('admin.types.index')}}">Show all types</a>
+                </button>
+    
+                <button class="btn btn-dark">
+                    <a href="{{route('admin.types.create')}}">Add a new type</a>
+                </button>
+            </div>
+
+            <h5 class="my-3">Technologies:</h5>
 
             <div>
                 <button class="btn btn-dark">
