@@ -11,7 +11,7 @@ class ProjectController extends Controller
 {
     public function index(Request $request) {
 
-        $projects = Project::with('type', 'technologies')->orderBy('projects.created_at', 'desc')->paginate(4);
+        $projects = Project::with('type', 'technologies')->orderBy('projects.created_at', 'desc')->paginate(6);
         $types = Type::all();
 
         $formData = $request->all();
